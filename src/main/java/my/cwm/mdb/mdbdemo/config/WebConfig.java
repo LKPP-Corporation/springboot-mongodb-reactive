@@ -2,14 +2,14 @@ package my.cwm.mdb.mdbdemo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
-import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
-import org.springframework.security.web.context.SecurityContextRepository;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.config.annotation.method.configuration.EnableReactiveMethodSecurity;
+import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
+import org.springframework.security.config.web.server.ServerHttpSecurity;
+import org.springframework.security.web.server.SecurityWebFilterChain;
+
+import reactor.core.publisher.Mono;
 @EnableWebFluxSecurity
 @EnableReactiveMethodSecurity
 public class WebConfig {
@@ -19,9 +19,7 @@ public class WebConfig {
     @Autowired
     private SecurityContextRepository securityContextRepository;
 
-    public WebConfig(JWTAuthorizationFilter jwtAuthorizationFilter) {
-        this.jwtAuthorizationFilter = jwtAuthorizationFilter;
-    }
+
 
     @Bean
     public SecurityWebFilterChain securitygWebFilterChain(ServerHttpSecurity http) {
@@ -33,11 +31,11 @@ public class WebConfig {
             return Mono.fromRunnable(() -> {
                 swe.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
             });
-        }).and().csrf().disable().formLogin().disable().httpBasic().disable().cors().disabled()
+        }).and().csrf().disable().formLogin().disable().httpBasic().disable()
                 .authenticationManager(authenticationManager).securityContextRepository(securityContextRepository)
                 .authorizeExchange().pathMatchers(HttpMethod.OPTIONS).permitAll().pathMatchers(AccountController.PATH_POST_REFRESH,AccountController.PATH_POST_LOGIN,AccountController.PATH_DELETE_LOGOUT).permitAll()
                 .pathMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/h2-console/**").permitAll()
-                .anyExchange().authenticated().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().build();
+                .anyExchange().authenticated().and().build();
     }
 /*
     @Override
