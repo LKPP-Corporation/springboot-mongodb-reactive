@@ -2,16 +2,19 @@ package my.cwm.mdb.mdbdemo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.config.annotation.method.configuration.EnableReactiveMethodSecurity;
 import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
 import org.springframework.security.config.web.server.ServerHttpSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 
 import reactor.core.publisher.Mono;
+
+@Configuration
 @EnableWebFluxSecurity
-@EnableReactiveMethodSecurity
 public class WebConfig {
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -23,6 +26,9 @@ public class WebConfig {
 
     @Bean
     public SecurityWebFilterChain securitygWebFilterChain(ServerHttpSecurity http) {
+        String[] patterns = new String[] { "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/h2-console/**",
+                AccountController.PATH_POST_REFRESH, AccountController.PATH_POST_LOGIN,
+                AccountController.PATH_DELETE_LOGOUT };
         return http.exceptionHandling().authenticationEntryPoint((swe, e) -> {
             return Mono.fromRunnable(() -> {
                 swe.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
@@ -31,11 +37,15 @@ public class WebConfig {
             return Mono.fromRunnable(() -> {
                 swe.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
             });
-        }).and().csrf().disable().formLogin().disable().httpBasic().disable()
+        }).and().csrf().disable()
                 .authenticationManager(authenticationManager).securityContextRepository(securityContextRepository)
-                .authorizeExchange().pathMatchers(HttpMethod.OPTIONS).permitAll().pathMatchers(AccountController.PATH_POST_REFRESH,AccountController.PATH_POST_LOGIN,AccountController.PATH_DELETE_LOGOUT).permitAll()
-                .pathMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/h2-console/**").permitAll()
+                .authorizeExchange().pathMatchers(HttpMethod.OPTIONS).permitAll().pathMatchers(patterns).permitAll()
                 .anyExchange().authenticated().and().build();
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 /*
     @Override

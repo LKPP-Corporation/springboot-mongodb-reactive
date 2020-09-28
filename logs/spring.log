@@ -1,0 +1,239 @@
+2020-09-28 09:25:43.775  INFO 8167 --- [restartedMain] my.cwm.mdb.mdbdemo.MdbdemoApplication    : Starting MdbdemoApplication on LCSB-MacBook-Pro.local with PID 8167 (/Users/eksm/Documents/spring-project/springboot-mongodb-reactive/target/classes started by eksm in /Users/eksm/Documents/spring-project/springboot-mongodb-reactive)
+2020-09-28 09:25:43.778  INFO 8167 --- [restartedMain] my.cwm.mdb.mdbdemo.MdbdemoApplication    : No active profile set, falling back to default profiles: default
+2020-09-28 09:25:43.867  INFO 8167 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-28 09:25:43.868  INFO 8167 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-28 09:25:45.097  INFO 8167 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2020-09-28 09:25:45.319  INFO 8167 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213ms. Found 2 Reactive MongoDB repository interfaces.
+2020-09-28 09:25:45.897  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : starting...
+2020-09-28 09:25:47.559  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : DownloadSize: 81088927
+2020-09-28 09:25:47.562  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 0 %
+2020-09-28 09:25:48.320  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 10 %
+2020-09-28 09:25:49.018  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 20 %
+2020-09-28 09:25:49.713  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 30 %
+2020-09-28 09:25:50.408  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 40 %
+2020-09-28 09:25:51.100  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 50 %
+2020-09-28 09:25:51.792  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 60 %
+2020-09-28 09:25:52.486  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 70 %
+2020-09-28 09:25:53.177  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 80 %
+2020-09-28 09:25:53.870  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 90 %
+2020-09-28 09:25:54.577  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : 100 %
+2020-09-28 09:25:54.577  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : downloaded with 11312kb/s
+2020-09-28 09:25:54.588  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Download Version{3.5.5}:OS_X:B64 : finished
+2020-09-28 09:25:54.608  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Extract /Users/eksm/.embedmongo/osx/mongodb-osx-x86_64-3.5.5.tgz : starting...
+2020-09-28 09:25:55.584  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Extract /Users/eksm/.embedmongo/osx/mongodb-osx-x86_64-3.5.5.tgz : extract mongodb-macOS-x86_64-3.5.5/bin/mongod
+2020-09-28 09:25:55.588  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Extract /Users/eksm/.embedmongo/osx/mongodb-osx-x86_64-3.5.5.tgz : nothing left
+2020-09-28 09:25:55.588  INFO 8167 --- [restartedMain] o.s.b.a.mongo.embedded.EmbeddedMongo     : Extract /Users/eksm/.embedmongo/osx/mongodb-osx-x86_64-3.5.5.tgz : finished
+2020-09-28 09:25:55.902  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2020-09-28 09:25:55.910  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.909+0800 I CONTROL  [initandlisten] MongoDB starting : pid=8189 port=56056 dbpath=/var/folders/d9/vm87mq8j2_7b3mnx0sg_6m6c0000gn/T/embedmongo-db-4d8b7882-c503-46a8-8ba0-b39f8e255078 64-bit host=LCSB-MacBook-Pro.local
+2020-09-28 09:25:55.911  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten] db version v3.5.5
+2020-09-28 09:25:55.911  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2020-09-28 09:25:55.911  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten] allocator: system
+2020-09-28 09:25:55.964  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten] modules: none
+2020-09-28 09:25:55.964  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten] build environment:
+2020-09-28 09:25:55.964  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2020-09-28 09:25:55.964  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-09-28 09:25:55.967  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.910+0800 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 56056 }, security: { authorization: "disabled" }, storage: { dbPath: "/var/folders/d9/vm87mq8j2_7b3mnx0sg_6m6c0000gn/T/embedmongo-db-4d8b7882-c503-46a8-8ba0-b39f8e255078", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-09-28 09:25:55.967  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:55.912+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2020-09-28 09:25:56.034  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.034+0800 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-09-28 09:25:56.038  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.034+0800 I CONTROL  [initandlisten] 
+2020-09-28 09:25:56.039  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.034+0800 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2020-09-28 09:25:56.039  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.034+0800 I CONTROL  [initandlisten] **       Not recommended for production.
+2020-09-28 09:25:56.054  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.034+0800 I CONTROL  [initandlisten] 
+2020-09-28 09:25:56.085  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.084+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/folders/d9/vm87mq8j2_7b3mnx0sg_6m6c0000gn/T/embedmongo-db-4d8b7882-c503-46a8-8ba0-b39f8e255078/diagnostic.data'
+2020-09-28 09:25:56.157  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.156+0800 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2020-09-28 09:25:56.158  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.156+0800 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2020-09-28 09:25:56.163  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.163+0800 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2020-09-28 09:25:56.164  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.164+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2020-09-28 09:25:56.202  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.164+0800 I NETWORK  [thread1] waiting for connections on port 56056
+2020-09-28 09:25:56.202  INFO 8167 --- [restartedMain] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@1ce3f5f4
+2020-09-28 09:25:56.507  INFO 8167 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:56056], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-09-28 09:25:56.658  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.657+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56074 #1 (1 connection now open)
+2020-09-28 09:25:56.723  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:56.722+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:56074 conn1: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.0.5" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.6" }, platform: "Java/AdoptOpenJDK/14.0.1+7" }
+2020-09-28 09:25:56.765  INFO 8167 --- [cluster-ClusterId{value='5f713ba4e0f4df53dbe0894d', description='null'}-localhost:56056] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:56056
+2020-09-28 09:25:56.771  INFO 8167 --- [cluster-ClusterId{value='5f713ba4e0f4df53dbe0894d', description='null'}-localhost:56056] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:56056, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=2843327}
+2020-09-28 09:25:56.890  INFO 8167 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-28 09:25:57.677  INFO 8167 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-28 09:25:57.824  WARN 8167 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration': Unsatisfied dependency expressed through method 'setSecurityWebFilterChains' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securitygWebFilterChain' defined in class path resource [my/cwm/mdb/mdbdemo/config/WebConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.server.SecurityWebFilterChain]: Factory method 'securitygWebFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: pattern cannot be null
+2020-09-28 09:25:57.828  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:57.828+0800 I -        [conn1] end connection 127.0.0.1:56074 (1 connection now open)
+2020-09-28 09:25:59.907  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.906+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56078 #2 (1 connection now open)
+2020-09-28 09:25:59.907  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.907+0800 I COMMAND  [conn2] terminating, shutdown command received
+2020-09-28 09:25:59.907  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.907+0800 I NETWORK  [conn2] shutdown: going to close listening sockets...
+2020-09-28 09:25:59.908  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.907+0800 I NETWORK  [conn2] closing listening socket: 7
+2020-09-28 09:25:59.909  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.908+0800 I NETWORK  [conn2] closing listening socket: 8
+2020-09-28 09:25:59.909  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.908+0800 I NETWORK  [conn2] removing socket file: /tmp/mongodb-56056.sock
+2020-09-28 09:25:59.909  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.908+0800 I NETWORK  [conn2] shutdown: going to flush diaglog...
+2020-09-28 09:25:59.909  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.908+0800 I FTDC     [conn2] Shutting down full-time diagnostic data capture
+2020-09-28 09:25:59.910  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.909+0800 I STORAGE  [conn2] WiredTigerKVEngine shutting down
+2020-09-28 09:25:59.956  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.956+0800 I STORAGE  [conn2] shutdown: removing fs lock...
+2020-09-28 09:25:59.957  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.956+0800 I CONTROL  [conn2] now exiting
+2020-09-28 09:25:59.973  INFO 8167 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:25:59.956+0800 I CONTROL  [initandlisten] shutting down with code:0
+2020-09-28 09:26:00.126  INFO 8167 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-28 09:26:00.134 ERROR 8167 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration': Unsatisfied dependency expressed through method 'setSecurityWebFilterChains' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securitygWebFilterChain' defined in class path resource [my/cwm/mdb/mdbdemo/config/WebConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.server.SecurityWebFilterChain]: Factory method 'securitygWebFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: pattern cannot be null
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:723) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at my.cwm.mdb.mdbdemo.MdbdemoApplication.main(MdbdemoApplication.java:19) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securitygWebFilterChain' defined in class path resource [my/cwm/mdb/mdbdemo/config/WebConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.server.SecurityWebFilterChain]: Factory method 'securitygWebFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: pattern cannot be null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1525) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1489) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1378) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1265) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:715) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.server.SecurityWebFilterChain]: Factory method 'securitygWebFilterChain' threw exception; nested exception is java.lang.IllegalArgumentException: pattern cannot be null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 41 common frames omitted
+Caused by: java.lang.IllegalArgumentException: pattern cannot be null
+	at org.springframework.util.Assert.notNull(Assert.java:201) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.server.util.matcher.PathPatternParserServerWebExchangeMatcher.<init>(PathPatternParserServerWebExchangeMatcher.java:52) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.server.util.matcher.ServerWebExchangeMatchers.pathMatchers(ServerWebExchangeMatchers.java:41) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.server.util.matcher.ServerWebExchangeMatchers.pathMatchers(ServerWebExchangeMatchers.java:52) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.config.web.server.AbstractServerWebExchangeMatcherRegistry.pathMatchers(AbstractServerWebExchangeMatcherRegistry.java:83) ~[spring-security-config-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at my.cwm.mdb.mdbdemo.config.WebConfig.securitygWebFilterChain(WebConfig.java:40) ~[classes/:na]
+	at my.cwm.mdb.mdbdemo.config.WebConfig$$EnhancerBySpringCGLIB$$977553a8.CGLIB$securitygWebFilterChain$0(<generated>) ~[classes/:na]
+	at my.cwm.mdb.mdbdemo.config.WebConfig$$EnhancerBySpringCGLIB$$977553a8$$FastClassBySpringCGLIB$$809e1e46.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at my.cwm.mdb.mdbdemo.config.WebConfig$$EnhancerBySpringCGLIB$$977553a8.securitygWebFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 42 common frames omitted
+
+2020-09-28 09:30:09.060  INFO 8673 --- [restartedMain] my.cwm.mdb.mdbdemo.MdbdemoApplication    : Starting MdbdemoApplication on LCSB-MacBook-Pro.local with PID 8673 (/Users/eksm/Documents/spring-project/springboot-mongodb-reactive/target/classes started by eksm in /Users/eksm/Documents/spring-project/springboot-mongodb-reactive)
+2020-09-28 09:30:09.064  INFO 8673 --- [restartedMain] my.cwm.mdb.mdbdemo.MdbdemoApplication    : No active profile set, falling back to default profiles: default
+2020-09-28 09:30:09.209  INFO 8673 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-28 09:30:09.210  INFO 8673 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-28 09:30:10.234  INFO 8673 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2020-09-28 09:30:10.475  INFO 8673 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233ms. Found 2 Reactive MongoDB repository interfaces.
+2020-09-28 09:30:11.552  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2020-09-28 09:30:11.564  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.563+0800 I CONTROL  [initandlisten] MongoDB starting : pid=8682 port=56428 dbpath=/var/folders/d9/vm87mq8j2_7b3mnx0sg_6m6c0000gn/T/embedmongo-db-19460c94-c514-4204-be36-105fad87f520 64-bit host=LCSB-MacBook-Pro.local
+2020-09-28 09:30:11.564  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.563+0800 I CONTROL  [initandlisten] db version v3.5.5
+2020-09-28 09:30:11.564  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.563+0800 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2020-09-28 09:30:11.565  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.563+0800 I CONTROL  [initandlisten] allocator: system
+2020-09-28 09:30:11.565  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.564+0800 I CONTROL  [initandlisten] modules: none
+2020-09-28 09:30:11.566  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.564+0800 I CONTROL  [initandlisten] build environment:
+2020-09-28 09:30:11.566  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.564+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2020-09-28 09:30:11.566  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.564+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-09-28 09:30:11.567  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.564+0800 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 56428 }, security: { authorization: "disabled" }, storage: { dbPath: "/var/folders/d9/vm87mq8j2_7b3mnx0sg_6m6c0000gn/T/embedmongo-db-19460c94-c514-4204-be36-105fad87f520", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-09-28 09:30:11.571  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.569+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2020-09-28 09:30:11.673  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.672+0800 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-09-28 09:30:11.674  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.672+0800 I CONTROL  [initandlisten] 
+2020-09-28 09:30:11.674  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.672+0800 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2020-09-28 09:30:11.696  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.672+0800 I CONTROL  [initandlisten] **       Not recommended for production.
+2020-09-28 09:30:11.696  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.672+0800 I CONTROL  [initandlisten] 
+2020-09-28 09:30:11.714  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.714+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/folders/d9/vm87mq8j2_7b3mnx0sg_6m6c0000gn/T/embedmongo-db-19460c94-c514-4204-be36-105fad87f520/diagnostic.data'
+2020-09-28 09:30:11.783  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.764+0800 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2020-09-28 09:30:11.783  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.764+0800 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2020-09-28 09:30:11.784  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.768+0800 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2020-09-28 09:30:11.787  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.768+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2020-09-28 09:30:11.787  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:11.769+0800 I NETWORK  [thread1] waiting for connections on port 56428
+2020-09-28 09:30:11.788  INFO 8673 --- [restartedMain] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6c820089
+2020-09-28 09:30:11.945  INFO 8673 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:56428], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-09-28 09:30:12.074  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:12.074+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56430 #1 (1 connection now open)
+2020-09-28 09:30:12.163  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:12.162+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:56430 conn1: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.0.5" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.6" }, platform: "Java/AdoptOpenJDK/14.0.1+7" }
+2020-09-28 09:30:12.231  INFO 8673 --- [cluster-ClusterId{value='5f713ca3ad15064b4688c2d0', description='null'}-localhost:56428] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:56428
+2020-09-28 09:30:12.243  INFO 8673 --- [cluster-ClusterId{value='5f713ca3ad15064b4688c2d0', description='null'}-localhost:56428] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:56428, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=9812066}
+2020-09-28 09:30:12.339  INFO 8673 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-28 09:30:13.122  INFO 8673 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-28 09:30:13.630  INFO 8673 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8080
+2020-09-28 09:30:13.649  INFO 8673 --- [restartedMain] my.cwm.mdb.mdbdemo.MdbdemoApplication    : Started MdbdemoApplication in 5.063 seconds (JVM running for 5.585)
+2020-09-28 09:30:13.763  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:13.762+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56434 #2 (2 connections now open)
+2020-09-28 09:30:13.795  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:13.791+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:56434 conn2: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.0.5" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.6" }, platform: "Java/AdoptOpenJDK/14.0.1+7" }
+2020-09-28 09:30:13.799  INFO 8673 --- [nioEventLoopGroup-3-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:56428
+2020-09-28 09:30:13.926  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:13.926+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56435 #3 (3 connections now open)
+2020-09-28 09:30:13.928  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:13.928+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:56436 #4 (4 connections now open)
+2020-09-28 09:30:13.969  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:13.968+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:56435 conn3: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.0.5" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.6" }, platform: "Java/AdoptOpenJDK/14.0.1+7" }
+2020-09-28 09:30:13.971  INFO 8673 --- [nioEventLoopGroup-3-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:56428
+2020-09-28 09:30:13.987  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:13.987+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:56436 conn4: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.0.5" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.6" }, platform: "Java/AdoptOpenJDK/14.0.1+7" }
+2020-09-28 09:30:13.989  INFO 8673 --- [nioEventLoopGroup-3-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:56428
+2020-09-28 09:30:37.760  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.759+0800 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+2020-09-28 09:30:37.761  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.759+0800 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-09-28 09:30:37.761  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.759+0800 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2020-09-28 09:30:37.761  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.760+0800 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2020-09-28 09:30:37.762  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.761+0800 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-56428.sock
+2020-09-28 09:30:37.763  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.761+0800 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2020-09-28 09:30:37.763  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.762+0800 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-09-28 09:30:37.765  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.765+0800 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-09-28 09:30:37.792  INFO 8673 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:56428 because the pool has been closed.
+2020-09-28 09:30:37.822  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.822+0800 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-09-28 09:30:37.843  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.823+0800 I CONTROL  [signalProcessingThread] now exiting
+2020-09-28 09:30:37.843  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.823+0800 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-09-28 09:30:37.843  INFO 8673 --- [Thread-4] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-09-28T09:30:37.823+0800 I CONTROL  [initandlisten] shutting down with code:0
+2020-09-28 09:30:37.844  INFO 8673 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:56428 because the pool has been closed.
+2020-09-28 09:30:37.846  INFO 8673 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:4}] to localhost:56428 because the pool has been closed.
+2020-09-28 09:30:39.879  WARN 8673 --- [SpringContextShutdownHook] d.flapdoodle.embed.mongo.runtime.Mongod  : sendShutdown /127.0.0.1:56428
+
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:648) ~[na:na]
+	at de.flapdoodle.embed.mongo.runtime.Mongod.sendShutdown(Mongod.java:88) ~[de.flapdoodle.embed.mongo-2.2.0.jar:na]
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.sendStopToMongoInstance(AbstractMongoProcess.java:133) ~[de.flapdoodle.embed.mongo-2.2.0.jar:na]
+	at de.flapdoodle.embed.mongo.AbstractMongoProcess.stopInternal(AbstractMongoProcess.java:107) ~[de.flapdoodle.embed.mongo-2.2.0.jar:na]
+	at de.flapdoodle.embed.process.runtime.AbstractProcess.stop(AbstractProcess.java:177) ~[de.flapdoodle.embed.process-2.1.2.jar:na]
+	at de.flapdoodle.embed.process.runtime.Executable.stop(Executable.java:80) ~[de.flapdoodle.embed.process-2.1.2.jar:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:579) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:551) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:512) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:142) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+
+2020-09-28 09:30:39.981  WARN 8673 --- [SpringContextShutdownHook] d.f.embed.mongo.AbstractMongoProcess     : could not stop mongod with db command, try next
+2020-09-28 09:30:39.999  INFO 8673 --- [SpringContextShutdownHook] d.f.e.process.runtime.ProcessControl     : execSuccess: false [kill, -2, 8682]
+2020-09-28 09:30:40.000  WARN 8673 --- [SpringContextShutdownHook] d.f.embed.mongo.AbstractMongoProcess     : could not stop mongod, try next
+2020-09-28 09:30:40.000  WARN 8673 --- [SpringContextShutdownHook] d.f.embed.mongo.AbstractMongoProcess     : could not stop mongod the second time, try one last thing

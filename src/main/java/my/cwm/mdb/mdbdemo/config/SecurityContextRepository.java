@@ -55,16 +55,21 @@ public class SecurityContextRepository implements ServerSecurityContextRepositor
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             String authToken = authHeader.substring(7);
-            Authentication auth = getAuthentication(authToken);
-            return this.authenticationManager.authenticate(auth).map((authentication) -> {
-                return new SecurityContextImpl(authentication);
+            //Authentication auth = getAuthentication(authToken);
+            //getAuthentication(authToken);
+            return getAuthentication(authToken).flatMap(auth->{
+                return this.authenticationManager.authenticate(auth).map((authentication) -> {
+                    return new SecurityContextImpl(authentication);
+                });
             });
+            
         } else {
+            log.warn("couldn't find bearer string, will ignore the header.");
             return Mono.empty();
         }
     }
 
-    private Authentication getAuthentication(String token) {
+    private Mono<Authentication> getAuthentication(String token) {
         // parse the token.
         final String username;
         try {
@@ -72,10 +77,11 @@ public class SecurityContextRepository implements ServerSecurityContextRepositor
             username = jwt.getSubject();
         } catch (JWTVerificationException e) {
             log.debug("Invalid JWT", e);
-            return null;
+            return Mono.empty();
         }
-
-        User user = this.userService.findFirstByUsername(username).block();
+        return this.userService.findFirstByUsername(username).map(u -> new JWTAuthentication(u));
+/*
+        User user = this.userService.findFirstByUsername(username).map(u -> new JWTAuthentication(u));
 
         if (user != null) {
             return new JWTAuthentication(user);
@@ -83,5 +89,6 @@ public class SecurityContextRepository implements ServerSecurityContextRepositor
             log.debug("User Not Found: {}", username);
             return null;
         }
+        */
     }
 }
