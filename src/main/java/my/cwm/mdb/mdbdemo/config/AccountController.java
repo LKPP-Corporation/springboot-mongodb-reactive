@@ -33,8 +33,10 @@ public class AccountController {
         return loginRequest.flatMap(lr -> {
             return this.accountService.login(lr).flatMap(tp -> {
                 return ServerResponse.ok().contentType(APPLICATION_JSON).body(BodyInserters.fromValue(tp));
-            }).onErrorContinue(ServerResponse.badRequest()
-                    .body(BodyInserters.fromObject(new ApiResponse(400, "Invalid credentials", null))));
+            });
+            // .onErrorContinue(ServerResponse.badRequest()
+            // .body(BodyInserters.fromObject(new ApiResponse(400, "Invalid credentials",
+            // null))));
         });
     }
 }
