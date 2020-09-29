@@ -26,7 +26,8 @@ public class WebConfig {
 
     @Bean
     public SecurityWebFilterChain securitygWebFilterChain(ServerHttpSecurity http) {
-        String[] patterns = new String[] { "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/h2-console/**",
+        String[] patterns = new String[] { "/v3/api-docs/**", "/swagger-ui/**", "/webjars/swagger-ui/**",
+                "/swagger-ui.html", "/h2-console/**",
                 AccountController.PATH_POST_REFRESH, AccountController.PATH_POST_LOGIN,
                 AccountController.PATH_DELETE_LOGOUT };
         return http.exceptionHandling().authenticationEntryPoint((swe, e) -> {

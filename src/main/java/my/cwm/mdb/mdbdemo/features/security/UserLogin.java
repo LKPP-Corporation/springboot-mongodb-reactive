@@ -4,13 +4,15 @@ import javax.validation.constraints.NotBlank;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
 @AllArgsConstructor
+@NoArgsConstructor
 public class UserLogin {
     @NotBlank
-    private final String username;
+    private String username;
 
     @NotBlank
-    private final String password;
+    private String password;
 }
